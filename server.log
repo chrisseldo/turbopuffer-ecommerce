@@ -1,0 +1,568 @@
+
+> turbopuffer-ecommerce@0.1.0 dev
+> next dev --turbopack
+
+   ▲ Next.js 15.3.4 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.68.62:3000
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 561ms
+ ○ Compiling / ...
+ ✓ Compiled / in 677ms
+ GET / 200 in 793ms
+ ✓ Compiled /api/ingest in 334ms
+Ingest API error: Error: 422 {"error":"Failed to deserialize the JSON body into the target type: upsert_rows[0]: data did not match any variant of untagged enum AttrValue at line 1 column 33033","status":"error"}
+    at APIError.generate (../src/core/error.ts:80:13)
+    at Turbopuffer.makeStatusError (src/client.ts:360:27)
+    at Turbopuffer.makeRequest (src/client.ts:584:23)
+    at async POST (src/app/api/ingest/route.ts:39:4)
+  37 |     }
+  38 |     
+> 39 |     await turbopuffer.namespace(NAMESPACE).write({
+     |    ^
+  40 |       upsert_rows: vectors.map(v => ({
+  41 |         id: v.id,
+  42 |         vector: v.vector, {
+  status: 422,
+  headers: Headers {
+    date: 'Fri, 20 Jun 2025 18:29:01 GMT',
+    'content-type': 'application/json',
+    'content-length': '183',
+    connection: 'keep-alive',
+    'cache-control': 'no-cache, no-store, must-revalidate',
+    'x-turbopuffer-org-id': 'kujxzgb0q1kn0aogwpf8w8ru',
+    'x-request-id': '6073549a5c3995d02f406cf2d35dfa77',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains',
+    'x-router-upstream': 'turbopuffer-turbopuffer-query-3000'
+  },
+  error: [Object]
+}
+ POST /api/ingest 500 in 2921ms
+Ingest API error: Error: 422 {"error":"Failed to deserialize the JSON body into the target type: upsert_rows[0]: data did not match any variant of untagged enum AttrValue at line 1 column 33077","status":"error"}
+    at APIError.generate (../src/core/error.ts:80:13)
+    at Turbopuffer.makeStatusError (src/client.ts:360:27)
+    at Turbopuffer.makeRequest (src/client.ts:584:23)
+    at async POST (src/app/api/ingest/route.ts:39:4)
+  37 |     }
+  38 |     
+> 39 |     await turbopuffer.namespace(NAMESPACE).write({
+     |    ^
+  40 |       upsert_rows: vectors.map(v => ({
+  41 |         id: v.id,
+  42 |         vector: v.vector, {
+  status: 422,
+  headers: Headers {
+    date: 'Fri, 20 Jun 2025 18:29:31 GMT',
+    'content-type': 'application/json',
+    'content-length': '183',
+    connection: 'keep-alive',
+    'cache-control': 'no-cache, no-store, must-revalidate',
+    'x-turbopuffer-org-id': 'kujxzgb0q1kn0aogwpf8w8ru',
+    'x-request-id': '2a92d386bfd9c90024826c015d715be4',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains',
+    'x-router-upstream': 'turbopuffer-turbopuffer-query-3000'
+  },
+  error: [Object]
+}
+ POST /api/ingest 500 in 1829ms
+Ingest API error: Error: 422 {"error":"Failed to deserialize the JSON body into the target type: upsert_rows[0]: data did not match any variant of untagged enum AttrValue at line 1 column 33040","status":"error"}
+    at APIError.generate (../src/core/error.ts:80:13)
+    at Turbopuffer.makeStatusError (src/client.ts:360:27)
+    at Turbopuffer.makeRequest (src/client.ts:584:23)
+    at async POST (src/app/api/ingest/route.ts:39:4)
+  37 |     }
+  38 |     
+> 39 |     await turbopuffer.namespace(NAMESPACE).write({
+     |    ^
+  40 |       upsert_rows: vectors.map(v => ({
+  41 |         id: v.id,
+  42 |         vector: v.vector, {
+  status: 422,
+  headers: Headers {
+    date: 'Fri, 20 Jun 2025 18:30:20 GMT',
+    'content-type': 'application/json',
+    'content-length': '183',
+    connection: 'keep-alive',
+    'cache-control': 'no-cache, no-store, must-revalidate',
+    'x-turbopuffer-org-id': 'kujxzgb0q1kn0aogwpf8w8ru',
+    'x-request-id': '8c7ccfb679069657283253a07809e0d0',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains',
+    'x-router-upstream': 'turbopuffer-turbopuffer-query-3000'
+  },
+  error: [Object]
+}
+ POST /api/ingest 500 in 2214ms
+Ingest API error: Error: 422 {"error":"Failed to deserialize the JSON body into the target type: upsert_rows[0]: data did not match any variant of untagged enum AttrValue at line 1 column 32712","status":"error"}
+    at APIError.generate (../src/core/error.ts:80:13)
+    at Turbopuffer.makeStatusError (src/client.ts:360:27)
+    at Turbopuffer.makeRequest (src/client.ts:584:23)
+    at async POST (src/app/api/ingest/route.ts:33:4)
+  31 |     }
+  32 |     
+> 33 |     await turbopuffer.namespace(NAMESPACE).write({
+     |    ^
+  34 |       upsert_rows: vectors.map(v => ({
+  35 |         id: v.id,
+  36 |         vector: v.vector, {
+  status: 422,
+  headers: Headers {
+    date: 'Fri, 20 Jun 2025 18:30:41 GMT',
+    'content-type': 'application/json',
+    'content-length': '183',
+    connection: 'keep-alive',
+    'cache-control': 'no-cache, no-store, must-revalidate',
+    'x-turbopuffer-org-id': 'kujxzgb0q1kn0aogwpf8w8ru',
+    'x-request-id': '67206f6261dcabaa0d167ebc3ea91cf5',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains',
+    'x-router-upstream': 'turbopuffer-turbopuffer-query-3000'
+  },
+  error: [Object]
+}
+ POST /api/ingest 500 in 2214ms
+Ingest API error: Error: 422 {"error":"Failed to deserialize the JSON body into the target type: upsert_rows[0]: data did not match any variant of untagged enum AttrValue at line 1 column 32729","status":"error"}
+    at APIError.generate (../src/core/error.ts:80:13)
+    at Turbopuffer.makeStatusError (src/client.ts:360:27)
+    at Turbopuffer.makeRequest (src/client.ts:584:23)
+    at async POST (src/app/api/ingest/route.ts:30:4)
+  28 |     }
+  29 |     
+> 30 |     await turbopuffer.namespace(NAMESPACE).write({
+     |    ^
+  31 |       upsert_rows: vectors.map(v => ({
+  32 |         id: v.id,
+  33 |         vector: v.vector, {
+  status: 422,
+  headers: Headers {
+    date: 'Fri, 20 Jun 2025 18:31:00 GMT',
+    'content-type': 'application/json',
+    'content-length': '183',
+    connection: 'keep-alive',
+    'cache-control': 'no-cache, no-store, must-revalidate',
+    'x-turbopuffer-org-id': 'kujxzgb0q1kn0aogwpf8w8ru',
+    'x-request-id': '783a90950c3250790a5e9b4a340f7306',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains',
+    'x-router-upstream': 'turbopuffer-turbopuffer-query-3000'
+  },
+  error: [Object]
+}
+ POST /api/ingest 500 in 2261ms
+Sending data to TurboPuffer: {
+  "namespace": "ecommerce_products",
+  "distance_metric": "cosine_distance",
+  "upsert_rows": [
+    {
+      "id": "1",
+      "vector": [
+        0.046805139631032944,
+        0.012804579921066761,
+        -0.029364604502916336,
+        0.022087104618549347,
+        -0.0008042644476518035,
+        -0.012687885202467442,
+        0.020654942840337753,
+        0.01670854352414608,
+        0.02862200140953064,
+        -0.024548299610614777,
+        -0.018204357475042343,
+        -0.022447796538472176,
+        -0.06887102872133255,
+        -0.041500840336084366,
+        -0.017472364008426666,
+        -0.0022516753524541855,
+        -0.05945059284567833,
+        -0.013854831457138062,
+        0.00004309743599151261,
+        0.00653489725664258,
+        0.016018984839320183,
+        0.03496594354510307,
+        0.03952764347195625,
+        -0.014788388274610043,
+        0.0433255210518837,
+        -0.014491346664726734,
+        -0.05372194945812225,
+        -0.013568398542702198,
+        0.0
+Ingest API error: Error: 422 {"error":"Failed to deserialize the JSON body into the target type: upsert_rows[0]: data did not match any variant of untagged enum AttrValue at line 1 column 32705","status":"error"}
+    at APIError.generate (../src/core/error.ts:80:13)
+    at Turbopuffer.makeStatusError (src/client.ts:360:27)
+    at Turbopuffer.makeRequest (src/client.ts:584:23)
+    at async POST (src/app/api/ingest/route.ts:42:4)
+  40 |     console.log('Sending data to TurboPuffer:', JSON.stringify(upsertData, null, 2).substring(0, 1000))
+  41 |     
+> 42 |     await turbopuffer.namespace(NAMESPACE).write(upsertData)
+     |    ^
+  43 |     
+  44 |     return NextResponse.json({
+  45 |       message: `Successfully ingested ${vectors.length} products`, {
+  status: 422,
+  headers: Headers {
+    date: 'Fri, 20 Jun 2025 18:31:51 GMT',
+    'content-type': 'application/json',
+    'content-length': '183',
+    connection: 'keep-alive',
+    'cache-control': 'no-cache, no-store, must-revalidate',
+    'x-turbopuffer-org-id': 'kujxzgb0q1kn0aogwpf8w8ru',
+    'x-request-id': '51d42cacda18267bce55d15d237532d1',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains',
+    'x-router-upstream': 'turbopuffer-turbopuffer-query-3000'
+  },
+  error: [Object]
+}
+ POST /api/ingest 500 in 2091ms
+Sending data to TurboPuffer: {
+  "namespace": "ecommerce_products",
+  "distance_metric": "cosine_distance",
+  "upsert_rows": [
+    {
+      "id": "1",
+      "vector": [
+        0.046793919056653976,
+        0.012833327054977417,
+        -0.029357561841607094,
+        0.022081807255744934,
+        -0.0007874996517784894,
+        -0.012674236670136452,
+        0.02069241553544998,
+        0.016715142875909805,
+        0.028636351227760315,
+        -0.024499988183379173,
+        -0.018221203237771988,
+        -0.022421201691031456,
+        -0.06885451078414917,
+        -0.04146967828273773,
+        -0.017478778958320618,
+        -0.0022179915104061365,
+        -0.059436336159706116,
+        -0.013840902596712112,
+        0.00004014557634945959,
+        0.006490906234830618,
+        0.01601514406502247,
+        0.034957557916641235,
+        0.039496950805187225,
+        -0.01481665950268507,
+        0.04333634302020073,
+        -0.014487871900200844,
+        -0.05366664007306099,
+        -0.01359696313738823,
+        0
+ POST /api/ingest 200 in 2571ms
+Sending data to TurboPuffer: {
+  "namespace": "ecommerce_products",
+  "distance_metric": "cosine_distance",
+  "upsert_rows": [
+    {
+      "id": "1",
+      "vector": [
+        0.04676247388124466,
+        0.012836341746151447,
+        -0.029364457353949547,
+        0.022065777331590652,
+        -0.0007737608975730836,
+        -0.012687821872532368,
+        0.020707882940769196,
+        0.016719069331884384,
+        0.028621859848499298,
+        -0.024548176676034927,
+        -0.01823609136044979,
+        -0.022447684779763222,
+        -0.06878581643104553,
+        -0.04150063544511795,
+        -0.017440451309084892,
+        -0.00221453420817852,
+        -0.05945029482245445,
+        -0.01383354514837265,
+        0.000015943900507409126,
+        0.006487126462161541,
+        0.016040122136473656,
+        0.034944552928209305,
+        0.039506226778030396,
+        -0.014777706004679203,
+        0.04332530498504639,
+        -0.014491274952888489,
+        -0.053636811673641205,
+        -0.01355772279202938,
+        0.
+Ingest API error: Error: 422 {"error":"Failed to deserialize the JSON body into the target type: upsert_rows[0]: data did not match any variant of untagged enum AttrValue at line 1 column 32700","status":"error"}
+    at APIError.generate (../src/core/error.ts:80:13)
+    at Turbopuffer.makeStatusError (src/client.ts:360:27)
+    at Turbopuffer.makeRequest (src/client.ts:584:23)
+    at async POST (src/app/api/ingest/route.ts:41:4)
+  39 |     console.log('Sending data to TurboPuffer:', JSON.stringify(upsertData, null, 2).substring(0, 1000))
+  40 |     
+> 41 |     await turbopuffer.namespace(NAMESPACE).write(upsertData)
+     |    ^
+  42 |     
+  43 |     return NextResponse.json({
+  44 |       message: `Successfully ingested ${vectors.length} products`, {
+  status: 422,
+  headers: Headers {
+    date: 'Fri, 20 Jun 2025 18:32:34 GMT',
+    'content-type': 'application/json',
+    'content-length': '183',
+    connection: 'keep-alive',
+    'cache-control': 'no-cache, no-store, must-revalidate',
+    'x-turbopuffer-org-id': 'kujxzgb0q1kn0aogwpf8w8ru',
+    'x-request-id': 'b17a7db118cfa8306d6dd7e422fd672d',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains',
+    'x-router-upstream': 'turbopuffer-turbopuffer-query-3000'
+  },
+  error: [Object]
+}
+ POST /api/ingest 500 in 1557ms
+Ingest API error: Error: 422 {"error":"Failed to deserialize the JSON body into the target type: upsert_rows[0]: data did not match any variant of untagged enum AttrValue at line 1 column 32652","status":"error"}
+    at APIError.generate (../src/core/error.ts:80:13)
+    at Turbopuffer.makeStatusError (src/client.ts:360:27)
+    at Turbopuffer.makeRequest (src/client.ts:584:23)
+    at async POST (src/app/api/ingest/route.ts:39:4)
+  37 |     // Debug removed - causing issues
+  38 |     
+> 39 |     await turbopuffer.namespace(NAMESPACE).write(upsertData)
+     |    ^
+  40 |     
+  41 |     return NextResponse.json({
+  42 |       message: `Successfully ingested ${vectors.length} products`, {
+  status: 422,
+  headers: Headers {
+    date: 'Fri, 20 Jun 2025 18:32:54 GMT',
+    'content-type': 'application/json',
+    'content-length': '183',
+    connection: 'keep-alive',
+    'cache-control': 'no-cache, no-store, must-revalidate',
+    'x-turbopuffer-org-id': 'kujxzgb0q1kn0aogwpf8w8ru',
+    'x-request-id': 'b1987fc7c4d1ea5627da62825d26472d',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains',
+    'x-router-upstream': 'turbopuffer-turbopuffer-query-3000'
+  },
+  error: [Object]
+}
+ POST /api/ingest 500 in 1100ms
+ POST /api/ingest 200 in 1838ms
+Ingest API error: Error: 422 {"error":"Failed to deserialize the JSON body into the target type: upsert_rows[0]: data did not match any variant of untagged enum AttrValue at line 1 column 32748","status":"error"}
+    at APIError.generate (../src/core/error.ts:80:13)
+    at Turbopuffer.makeStatusError (src/client.ts:360:27)
+    at Turbopuffer.makeRequest (src/client.ts:584:23)
+    at async POST (src/app/api/ingest/route.ts:45:4)
+  43 |     // Debug removed - causing issues
+  44 |     
+> 45 |     await turbopuffer.namespace(NAMESPACE).write(upsertData)
+     |    ^
+  46 |     
+  47 |     return NextResponse.json({
+  48 |       message: `Successfully ingested ${vectors.length} products`, {
+  status: 422,
+  headers: Headers {
+    date: 'Fri, 20 Jun 2025 18:33:39 GMT',
+    'content-type': 'application/json',
+    'content-length': '183',
+    connection: 'keep-alive',
+    'cache-control': 'no-cache, no-store, must-revalidate',
+    'x-turbopuffer-org-id': 'kujxzgb0q1kn0aogwpf8w8ru',
+    'x-request-id': 'cd333768b9ef545bfbf745a81f9e3c02',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains',
+    'x-router-upstream': 'turbopuffer-turbopuffer-query-3000'
+  },
+  error: [Object]
+}
+ POST /api/ingest 500 in 1396ms
+Ingest API error: Error: 422 {"error":"Failed to deserialize the JSON body into the target type: upsert_rows[0]: data did not match any variant of untagged enum AttrValue at line 1 column 32752","status":"error"}
+    at APIError.generate (../src/core/error.ts:80:13)
+    at Turbopuffer.makeStatusError (src/client.ts:360:27)
+    at Turbopuffer.makeRequest (src/client.ts:584:23)
+    at async POST (src/app/api/ingest/route.ts:45:4)
+  43 |     // Debug removed - causing issues
+  44 |     
+> 45 |     await turbopuffer.namespace(NAMESPACE).write(upsertData)
+     |    ^
+  46 |     
+  47 |     return NextResponse.json({
+  48 |       message: `Successfully ingested ${vectors.length} products`, {
+  status: 422,
+  headers: Headers {
+    date: 'Fri, 20 Jun 2025 18:33:53 GMT',
+    'content-type': 'application/json',
+    'content-length': '183',
+    connection: 'keep-alive',
+    'cache-control': 'no-cache, no-store, must-revalidate',
+    'x-turbopuffer-org-id': 'kujxzgb0q1kn0aogwpf8w8ru',
+    'x-request-id': '4a89a149325b96c7617193848079d379',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains',
+    'x-router-upstream': 'turbopuffer-turbopuffer-query-3000'
+  },
+  error: [Object]
+}
+ POST /api/ingest 500 in 1303ms
+ GET / 200 in 54ms
+ GET / 200 in 46ms
+ ✓ Compiled /api/search in 261ms
+Search API error: TypeError: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$turbopuffer$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__.turbopuffer.vectors is not a function
+    at POST (src/app/api/search/route.ts:32:44)
+  30 |     if (filters.inStock) searchFilters.inStock = ['Eq', true]
+  31 |     
+> 32 |     const searchResults = await turbopuffer.vectors({
+     |                                            ^
+  33 |       namespace: NAMESPACE,
+  34 |       vector: embedding,
+  35 |       top_k: 50,
+ POST /api/search 500 in 624ms
+Search API error: Error: 400 {"error":"💔 the `vectors` field is unsupported in v2 queries, please provide `rank_by` instead.","status":"error"}
+    at APIError.generate (../src/core/error.ts:60:13)
+    at Turbopuffer.makeStatusError (src/client.ts:360:27)
+    at Turbopuffer.makeRequest (src/client.ts:584:23)
+    at async POST (src/app/api/search/route.ts:32:26)
+  30 |     if (filters.inStock) searchFilters.inStock = ['Eq', true]
+  31 |     
+> 32 |     const searchResults = await turbopuffer.namespace(NAMESPACE).query({
+     |                          ^
+  33 |       vector: embedding,
+  34 |       top_k: 50,
+  35 |       include_attributes: false {
+  status: 400,
+  headers: Headers {
+    date: 'Fri, 20 Jun 2025 18:36:43 GMT',
+    'content-type': 'application/json',
+    'content-length': '117',
+    connection: 'keep-alive',
+    'cache-control': 'no-cache, no-store, must-revalidate',
+    'x-turbopuffer-org-id': 'kujxzgb0q1kn0aogwpf8w8ru',
+    'x-request-id': '31567ec98cee5ff22d6712ea06fbeb5f',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains',
+    'x-router-upstream': 'turbopuffer-turbopuffer-query-3000'
+  },
+  error: [Object]
+}
+ POST /api/search 500 in 547ms
+Search API error: Error: 422 {"error":"Failed to deserialize the JSON body into the target type: data did not match any variant of untagged enum RankInput at line 1 column 32768","status":"error"}
+    at APIError.generate (../src/core/error.ts:80:13)
+    at Turbopuffer.makeStatusError (src/client.ts:360:27)
+    at Turbopuffer.makeRequest (src/client.ts:584:23)
+    at async POST (src/app/api/search/route.ts:32:26)
+  30 |     if (filters.inStock) searchFilters.inStock = ['Eq', true]
+  31 |     
+> 32 |     const searchResults = await turbopuffer.namespace(NAMESPACE).query({
+     |                          ^
+  33 |       rank_by: embedding,
+  34 |       top_k: 50,
+  35 |       include_attributes: false {
+  status: 422,
+  headers: Headers {
+    date: 'Fri, 20 Jun 2025 18:36:56 GMT',
+    'content-type': 'application/json',
+    'content-length': '167',
+    connection: 'keep-alive',
+    'cache-control': 'no-cache, no-store, must-revalidate',
+    'x-turbopuffer-org-id': 'kujxzgb0q1kn0aogwpf8w8ru',
+    'x-request-id': '0944bdc351070c3cf325935e9e91d5a5',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains',
+    'x-router-upstream': 'turbopuffer-turbopuffer-query-3000'
+  },
+  error: [Object]
+}
+ POST /api/search 500 in 491ms
+Search API error: TypeError: searchResults.map is not a function
+    at POST (src/app/api/search/route.ts:112:46)
+  110 |     ]
+  111 |     
+> 112 |     const products: Product[] = searchResults.map(result => {
+      |                                              ^
+  113 |       const foundProduct = sampleProducts.find(p => p.id === result.id)
+  114 |       return foundProduct || sampleProducts[0] // fallback to first product
+  115 |     })
+ POST /api/search 500 in 427ms
+Search results structure: {
+  "rows": [
+    {
+      "$dist": 0.37691635,
+      "id": "5"
+    },
+    {
+      "$dist": 0.7830528,
+      "id": "1"
+    },
+    {
+      "$dist": 0.8324592,
+      "id": "3"
+    },
+    {
+      "$dist": 0.87892175,
+      "id": "2"
+    },
+    {
+      "$dist": 0.90435433,
+      "id": "4"
+    }
+  ],
+  "performance": {
+    "cache_hit_ratio": 1,
+    "cache_temperature": "hot",
+    "server_total_ms": 13,
+    "query_execution_ms": 13,
+    "exhaustive_search_count": 10,
+    "approx_namespace_size": 10,
+    "client_total_ms": 173.58575000008568,
+    "client_compress_ms": 15.784417000017129,
+    "client_response_ms": 173.28945799998473,
+    "client_body_read_ms": 0.05895900004543364,
+    "client_decompress_ms": 0,
+    "client_deserialize_ms": 0.09391700010746717
+  },
+  "billing": {
+    "billable_logical_bytes_queried": 256000000,
+    "billable_logical_bytes_returned": 25
+  }
+}
+ POST /api/search 200 in 669ms
+ POST /api/search 200 in 381ms
+ POST /api/search 200 in 367ms
+ GET / 200 in 47ms
+ POST /api/search 200 in 466ms
+ ⚠ Found a change in next.config.ts. Restarting the server to apply the changes...
+   ▲ Next.js 15.3.4 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.68.62:3000
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 656ms
+ ○ Compiling / ...
+ ✓ Compiled / in 751ms
+ GET / 200 in 880ms
+ ✓ Compiled /api/search in 287ms
+ POST /api/search 200 in 913ms
+ ⚠ The "images.domains" configuration is deprecated. Please use "images.remotePatterns" configuration instead.
+ ✓ Compiled /api/ingest in 200ms
+Ingest API error: Error: 422 {"error":"Failed to deserialize the JSON body into the target type: upsert_rows[0]: data did not match any variant of untagged enum AttrValue at line 1 column 32752","status":"error"}
+    at APIError.generate (../src/core/error.ts:80:13)
+    at Turbopuffer.makeStatusError (src/client.ts:360:27)
+    at Turbopuffer.makeRequest (src/client.ts:584:23)
+    at async POST (src/app/api/ingest/route.ts:45:4)
+  43 |     // Debug removed - causing issues
+  44 |     
+> 45 |     await turbopuffer.namespace(NAMESPACE).write(upsertData)
+     |    ^
+  46 |     
+  47 |     return NextResponse.json({
+  48 |       message: `Successfully ingested ${vectors.length} products`, {
+  status: 422,
+  headers: Headers {
+    date: 'Fri, 20 Jun 2025 18:47:51 GMT',
+    'content-type': 'application/json',
+    'content-length': '183',
+    connection: 'keep-alive',
+    'cache-control': 'no-cache, no-store, must-revalidate',
+    'x-turbopuffer-org-id': 'kujxzgb0q1kn0aogwpf8w8ru',
+    'x-request-id': 'a4bb7a70cfbeb01f5243ad8cf2ecf3a2',
+    'strict-transport-security': 'max-age=31536000; includeSubDomains',
+    'x-router-upstream': 'turbopuffer-turbopuffer-query-3000'
+  },
+  error: [Object]
+}
+ POST /api/ingest 500 in 8091ms
+ POST /api/ingest 200 in 5801ms
+ POST /api/search 200 in 708ms
+ POST /api/search 200 in 484ms
+ GET / 200 in 41ms
+ POST /api/search 200 in 893ms
+ ⨯ upstream image response failed for https://images.unsplash.com/photo-1608667508764-33cf0726ef4a?w=400 404
+ ⨯ upstream image response failed for https://images.unsplash.com/photo-1544966503-7cc5ac882d5a?w=400 404
